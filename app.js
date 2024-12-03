@@ -63,6 +63,7 @@ const makeRandom = () => {
 
     for(let i = 0; i < 4; i++) {
         document.getElementsByClassName('professor_name')[i].innerText = professors[i];
+        document.getElementsByClassName('student_list')[i].innerHTML = "";
         for (s of list[i]) {
             let item = document.createElement('li');
             item.innerText = s;
